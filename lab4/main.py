@@ -5,7 +5,6 @@ from pathlib import Path
 
 EXE_PATH = Path(r"C:\Users\Liza\source\repos\CUDALab\x64\Release\CUDALab.exe")
 
-# ← МЕНЯЙ ТОЛЬКО ЭТУ СТРОКУ
 N = 512
 
 BLOCK_CONFIGS = [
@@ -15,7 +14,6 @@ BLOCK_CONFIGS = [
 
 REPEATS = 5
 
-# ИСПРАВЛЕННАЯ РЕГУЛЯРКА (было \\s, стало \s)
 TIME_PATTERN = re.compile(r"Kernel execution time:\s*([0-9.]+)\s*ms")
 
 
@@ -37,7 +35,6 @@ print("=" * 50)
 print(f"Повторов: {REPEATS}")
 print()
 
-# Прогрев
 print("Прогрев...")
 run_exe(N, 16, 16)
 
